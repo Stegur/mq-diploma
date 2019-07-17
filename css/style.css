@@ -5,8 +5,9 @@ html {
 body {
     margin: 0;
 }
-
+/* PHONES */
 @media (max-width: 640px) {
+    /* HEADER */
     .header {
         position: relative;
 
@@ -97,4 +98,66 @@ body {
     .app-button-next-text {
         display: block;
     }
+    /* END HEADER */
+
+    /* ATHLETS */
+    .athlets, .players { /*Заменить на 1 класс?*/
+        padding-top: 25px;
+        padding-right: 20px;
+        padding-bottom: 75px;
+        padding-left: 20px;
+    }
+
+    .sportsman-title, .benefit-title {
+        color: #e7e7e7;
+        text-transform: uppercase;
+    }
+
+    .sportsman-img {
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .benefit {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .athlets .benefit:first-child {
+        color: red;
+    }
+
+    /* .athlets .benefit:nth-child(2) {
+        background-color: #120b2e;
+    } */
+
+     .benefit-title-number {
+        margin-right: 8px;
+
+        border-radius: 2px;
+        
+        color: #000000;
+        font-weight: bold;
+        border-bottom: 2px solid #5e42b0;
+     }
+
+     .athlets .benefit:last-child {
+        background-color: #5e42b0;
+     }
+
+     .athlets .benefit:last-child .benefit-title-number {
+        border-bottom: 2px solid #FFFFFF;
+     }
+
+     .players .benefit:last-child {
+         background-color: #090c35;
+     }
+
+     .players .benefit:last-child .benefit-title-number {
+        color: #FFFFFF;
+     }
+
+     .players .benefit:last-child .benefit-discription {
+        color: #FFFFFF;
+     }
 }
