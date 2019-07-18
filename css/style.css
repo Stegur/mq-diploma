@@ -41,13 +41,13 @@ body {
         z-index: 1;
     }
 
-    .logo {
+    .logo-text {
         width: 135px;
         margin: auto;
         padding-top: 35px;
     }
 
-    .logo-icon {
+    .logo-text-icon {
         height: 36px;
         fill: #FFFFFF;
     }
@@ -208,4 +208,78 @@ body {
     .article-description {
         margin-bottom: 80px;
     }
+    /* END ARTICLES */
+
+    /* FOOTER */
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 10px;
+
+        background-image: url(../images/game_767.jpg);
+        background-repeat: no-repeat;
+        background-position: center 50%;
+        background-color: #000000;
+        background-size: cover;
+
+        color: #FFFFFF;
+    }
+
+    .footer::after  {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(6, 16, 46, 0.85);  
+    }
+
+    .app-logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+
+        width: 80px;
+        height: 80px;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        background-color: #553ba2;
+
+        border-radius: 20px;
+    }
+
+    .app-logo-icon {
+        height: 50px;
+        fill: #FFFFFF;
+    }
+
+    .footer-title {
+        margin-top: 60px;
+        margin-bottom: 0;
+        margin-left: 20px;
+
+        text-transform: uppercase;
+    }
+
+    .footer-title-descr {
+        display: block;
+
+        color: #9b8ec1;
+    }
+
+    .footer .app {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    /* END FOOTER */
 }
