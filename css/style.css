@@ -100,7 +100,7 @@ body {
     }
     /* END HEADER */
 
-    /* ATHLETS */
+    /* SPORTSMEN */
     .athlets, .players { 
         padding-top: 25px;
         /* padding-bottom: 75px; */
@@ -164,4 +164,48 @@ body {
      .players .benefit:last-child .benefit-discription {
         color: #FFFFFF;
      }
+    /* END SPORTSMEN */
+
+    /* ARTICLES */
+
+    .article-title, .article-description {
+        padding-left: 20px;
+    }
+
+    .article-img {
+        width: 100%;
+    }
+
+    .article-title {
+        position: relative;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        color: #e7e7e7;
+        text-transform: uppercase;
+    }
+
+    .article-number {
+        position: absolute;
+        top: -90px;          /* Альтернативы? */
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 70px;
+        height: 70px;
+
+        background-color: #5e42b0;
+    }
+
+    .article-number-decoration {
+        border-bottom: 2px solid #8f7bc8; 
+    }
+
+    .article-description {
+        margin-bottom: 80px;
+    }
 }
