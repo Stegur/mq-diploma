@@ -101,16 +101,18 @@ body {
     /* END HEADER */
 
     /* ATHLETS */
-    .athlets, .players { /*Заменить на 1 класс?*/
+    .athlets, .players { 
         padding-top: 25px;
-        padding-right: 20px;
-        padding-bottom: 75px;
-        padding-left: 20px;
+        /* padding-bottom: 75px; */
     }
 
     .sportsman-title, .benefit-title {
         color: #e7e7e7;
         text-transform: uppercase;
+    }
+
+    .sportsman-title {
+        margin-left: 20px;
     }
 
     .sportsman-img {
@@ -120,16 +122,10 @@ body {
 
     .benefit {
         padding-top: 60px;
+        padding-right: 20px;
         padding-bottom: 60px;
+        padding-left: 20px;
     }
-
-    .athlets .benefit:first-child {
-        color: red;
-    }
-
-    /* .athlets .benefit:nth-child(2) {
-        background-color: #120b2e;
-    } */
 
      .benefit-title-number {
         margin-right: 8px;
@@ -140,6 +136,14 @@ body {
         font-weight: bold;
         border-bottom: 2px solid #5e42b0;
      }
+
+    .benefit:nth-child(3) {
+        background-color: #fafafa;
+    }
+
+    .benefit:nth-child(4) {
+        background-color: #f5f4f9;
+    }
 
      .athlets .benefit:last-child {
         background-color: #5e42b0;
