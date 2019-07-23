@@ -1,9 +1,25 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('/fonts/OpenSans-Regular.ttf') format('ttf'),
+        url('/fonts/OpenSans-Regular.woff') format('woff'),
+        url('/fonts/OpenSans-Regular.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('/fonts/OpenSans-Bold.ttf') format('ttf'),
+        url('/fonts/OpenSans-Bold.woff') format('woff'),
+        url('/fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     margin: 0;
+    font-family: 'Open Sans';
 }
 
 /* PHONES */
@@ -34,7 +50,7 @@ body {
         width: 100%;
         height: 100%;
 
-        background-color: rgba(6, 16, 46, 0.85);
+        background-color: rgba(6, 16, 46, 0.9);
     }
 
     .container {
@@ -50,40 +66,48 @@ body {
     }
 
     .logo-text-icon {
-        height: 36px;
         fill: #FFFFFF;
     }
 
     .title {
+        margin: 0;
         padding-top: 140px;
         padding-left: 2rem;
         padding-right: 2rem;
 
         text-transform: uppercase;
+        font-size: 2.8rem;
+        letter-spacing: 0.1rem;
     }
 
     .title-right {
         display: block;
 
-        margin-top: 3rem;
-        margin-left: 6.5rem;
+        margin-top: 2.5rem;
+        margin-left: 4.5rem;
     }
 
     .app {
         padding-top: 9rem;
         padding-right: 2rem;
-        padding-bottom: 9rem;
+        padding-bottom: 8rem;
         padding-left: 2rem;
     }
 
     .app-link {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        height: 4rem;
+        padding-left: 10rem;
 
         background-color: #5e42b0;
         border-radius: 18px;
 
         color: #FFFFFF;
-        text-align: center;
         text-transform: uppercase;
     }
 
@@ -92,12 +116,14 @@ body {
     }
 
     .brand-logo-icon {
-        height: 20px;
+        height: 25px;
         fill: #FFFFFF;
     }
 
     .app-link-next-text {
         display: block;
+
+        font-weight: bold;
     }
 
     /* END HEADER */
