@@ -310,7 +310,7 @@ body {
         width: 100%;
         height: 100%;
 
-        background-color: rgba(6, 16, 46, 0.85);
+        background-color: rgba(6, 16, 46, 0.9);
     }
 
     .app-logo {
@@ -336,10 +336,11 @@ body {
     }
 
     .footer-title {
-        margin-top: 60px;
+        margin-top: 55px;
         margin-bottom: 0;
         margin-left: 20px;
 
+        font-size: 3.2rem;
         text-transform: uppercase;
     }
 
@@ -347,11 +348,16 @@ body {
         display: block;
 
         color: #9b8ec1;
+        font-size: 1.4rem;
     }
 
     .footer .app {
-        padding-top: 80px;
+        padding-top: 75px;
         padding-bottom: 80px;
+    }
+
+    .footer .logo-text {
+        padding-top: 0;
     }
 
     /* END FOOTER */
