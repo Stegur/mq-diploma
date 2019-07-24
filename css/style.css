@@ -131,7 +131,7 @@ body {
     /* SPORTSMEN */
     .athlets,
     .players {
-        padding-top: 25px;
+        /* padding-top: 25px; */
         /* padding-bottom: 75px; */
     }
 
@@ -142,7 +142,10 @@ body {
     }
 
     .sportsman-title {
+        margin-top: 25px;
         margin-left: 20px;
+
+        font-size: 5rem;
     }
 
     .sportsman-img {
@@ -164,18 +167,33 @@ body {
 
     }
 
+    .benefit-title {
+        display: flex;
+        align-items: center;
+
+        font-size: 2.3rem;
+        letter-spacing: 0.08rem;
+    }
+
     .benefit-title-number {
         margin-right: 8px;
 
+        border-bottom: 2px solid #5e42b0;
         border-radius: 2px;
 
         color: #000000;
-        font-weight: bold;
-        border-bottom: 2px solid #5e42b0;
+        font-size: 1.4rem;
+    }
+
+    .benefit-discription {
+        font-size: 1.5rem;
+        letter-spacing: 0.08rem;
     }
 
     .benefit:nth-child(3) {
-        background-color: #fafafa;
+        /* background-color: #fafafa; */
+        background-color: red;
+        /*не могу побороть селектор*/
     }
 
     .benefit:nth-child(4) {
@@ -184,6 +202,10 @@ body {
 
     .athlets .benefit:last-child {
         background-color: #5e42b0;
+    }
+
+    .athlets .benefit:last-child .benefit-discription {
+        color: #FFFFFF;
     }
 
     .athlets .benefit:last-child .benefit-title-number {
