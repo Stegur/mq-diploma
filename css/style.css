@@ -288,8 +288,8 @@ body {
     position: relative;
 
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
 
     background-image: url(../images/game_767.jpg);
     background-repeat: no-repeat;
@@ -319,8 +319,8 @@ body {
     align-items: center;
     justify-content: center;
 
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
 
     margin-right: auto;
     margin-left: auto;
@@ -336,9 +336,10 @@ body {
 }
 
 .footer-title {
-    margin-top: 55px;
+    margin-top: 5.5rem;
+    margin-right: 2rem;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 2rem;
 
     font-size: 3.2rem;
     text-transform: uppercase;
@@ -353,8 +354,8 @@ body {
 }
 
 .footer .app {
-    padding-top: 75px;
-    padding-bottom: 80px;
+    padding-top: 7.5rem;
+    padding-bottom: 8rem;
 }
 
 .footer .logo-text {
@@ -409,6 +410,37 @@ body {
 
     .brand-logo-icon {
         height: 4.5rem;
+    }
+    /* END HEADER */
+
+    /* FOOTER */
+
+    .footer {
+        padding-top: 13rem;
+        padding-bottom: 2.5rem;
+    }
+    .app-logo {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .app-logo-icon {
+        height: 9rem;
+    }
+
+    .footer-title {
+        margin-top: 8.5rem;
+
+        font-size: 8rem;
+    }
+
+    .footer-title-descr {
+        font-size: 3.6rem;
+    }
+
+    .footer .app {
+        padding-top: 29rem;
+        padding-bottom: 6rem;
     }
 }
 
