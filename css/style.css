@@ -100,7 +100,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 
     height: 4rem;
 
@@ -367,7 +366,7 @@ body {
 
 /*TABLETS*/
 
-@media (min-width: 641px) {
+@media (min-width: 641px) and (max-width: 960px) {
 
     /* HEADER */
     .logo-text {
@@ -411,6 +410,7 @@ body {
     .brand-logo-icon {
         height: 4.5rem;
     }
+
     /* END HEADER */
 
     /* FOOTER */
@@ -419,6 +419,7 @@ body {
         padding-top: 13rem;
         padding-bottom: 2.5rem;
     }
+
     .app-logo {
         width: 14rem;
         height: 14rem;
