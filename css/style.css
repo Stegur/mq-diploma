@@ -257,8 +257,8 @@ body {
     align-items: center;
     justify-content: center;
 
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
 
     background-color: #5e42b0;
 }
@@ -475,6 +475,37 @@ body {
     }
 
     /* END SPORTSMEN */
+
+    /* ARTICLES */
+
+    .article-number {
+        top: -125px;
+        left: 3rem;
+
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .article-title {
+        font-size: 8rem;
+    }
+
+    .article-number-decoration,
+    .article-description {
+        font-size: 2.4rem;
+    }
+
+    .article-title,
+    .article-description {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
+
+
+
+    /* END ARTICLES */
 
     /* FOOTER */
 
