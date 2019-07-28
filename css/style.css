@@ -203,11 +203,11 @@ body {
     background-color: #5e42b0;
 }
 
-.athlets .benefit:last-child .benefit-discription {
+.benefit:last-child .benefit-discription {
     color: #FFFFFF;
 }
 
-.athlets .benefit:last-child .benefit-title-number {
+.benefit:last-child .benefit-title-number {
     border-bottom: 2px solid #FFFFFF;
 }
 
@@ -216,12 +216,9 @@ body {
 }
 
 .players .benefit:last-child .benefit-title-number {
-    color: #FFFFFF;
+    color: #8765dd;
 }
 
-.players .benefit:last-child .benefit-discription {
-    color: #FFFFFF;
-}
 
 /* END SPORTSMEN */
 
@@ -412,6 +409,72 @@ body {
     }
 
     /* END HEADER */
+
+    /* SPORTSMEN */
+
+    .athlets,
+    .players {
+        margin-top: 9rem;
+        position: relative;
+    }
+
+    .sportsman-img {
+        position: absolute;
+        top: 0;
+    }
+
+    .athlets .sportsman-img {
+        left: -10rem;
+    }
+
+    .sportsman-title {
+        margin: 0;
+
+        font-size: 8rem;
+    }
+
+    .athlets .sportsman-img {
+        margin-left: -130px;
+        /* height: 588px; */
+    }
+
+    .athlets .benefit,
+    .athlets .sportsman-title {
+        padding-left: 293px;
+    }
+
+    .benefit {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .benefit:first-child {
+        padding-top: 6rem;
+    }
+
+    .benefit-title {
+        margin: 0;
+        font-size: 3.2rem;
+    }
+
+    .benefit-discription {
+        font-size: 1.6rem;
+    }
+
+    .players .sportsman-img {
+        right: 0;
+    }
+
+    .players .benefit {
+        padding-right: 293px;
+        padding-left: 3rem;
+    }
+
+    .players .sportsman-title {
+        padding-left: 3rem;
+    }
+
+    /* END SPORTSMEN */
 
     /* FOOTER */
 
