@@ -219,7 +219,6 @@ body {
     color: #8765dd;
 }
 
-
 /* END SPORTSMEN */
 
 /* ARTICLES */
@@ -501,10 +500,6 @@ body {
         padding-right: 3rem;
     }
 
-
-
-
-
     /* END ARTICLES */
 
     /* FOOTER */
@@ -537,6 +532,60 @@ body {
         padding-top: 29rem;
         padding-bottom: 6rem;
     }
+
+    /* END FOOTER */
 }
 
 /* END TABLETS */
+
+/* DESkTOP */
+@media (min-width: 961px) {
+
+    /* HEADER */
+
+    .header {
+        background-image: url(../images//football_1280.jpg);
+    }
+
+    .logo-text {
+        width: 19rem;
+
+        padding-top: 4rem;
+    }
+
+    .title {
+        padding-top: 29.5rem;
+
+        font-size: 9rem;
+    }
+
+    .app {
+
+        display: flex;
+        justify-content: center;
+
+        padding-top: 22.5rem;
+        padding-bottom: 11rem;
+    }
+
+    .app-link {
+        width: 31rem;
+        height: 8rem;
+
+        border-radius: 5rem;
+
+        font-size: 1.4rem;
+    }
+
+    .app-link:nth-child(n + 2) {
+        margin-top: 0;
+        margin-left: 5rem;
+    }
+
+    .brand-logo-icon {
+        height: 5rem;
+    }
+
+    /* END HEADER */
+
+}
