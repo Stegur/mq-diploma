@@ -362,7 +362,7 @@ body {
 
 /*TABLETS*/
 
-@media (min-width: 641px) and (max-width: 960px) {
+@media (min-width: 641px) {
 
     /* HEADER */
     .logo-text {
@@ -588,4 +588,47 @@ body {
 
     /* END HEADER */
 
+    /* SPORTSMEN */
+
+    .athlets .sportsman-title,
+    .athlets .benefit {
+        padding-left: 50vw;
+    }
+
+    .athlets .sportsman-img {
+        margin: 0;
+        left: 20vw;
+    }
+
+    .athlets .benefit-discription {
+        width: 71.5rem;
+    }
+
+    .players .sportsman-title,
+    .players .benefit {
+        padding-left: 19.3rem;
+    }
+
+    .players .benefit-discription {
+        width: 75.5rem;
+    }
+
+    .players .sportsman-img {
+        top: -7vh;
+        right: 7vw;
+    }
+
+    .benefit-title {
+        font-size: 3.6rem;
+    }
+
+    .benefit-discription {
+        font-size: 2rem;
+    }
+
+    .benefit-title-number {
+        font-size: 1.8rem;
+    }
+
+    /* END SPORTSMEN */
 }
