@@ -71,26 +71,27 @@ body {
 }
 
 .title {
-    margin: 0;
-    padding-top: 140px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    width: 20rem;
+
+    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
 
     text-transform: uppercase;
-    font-size: 2.8rem;
-    letter-spacing: 0.1rem;
-    text-align: center;
 }
 
 .title-right {
-    display: block;
-
-    margin-top: 2.5rem;
-    margin-left: 4.5rem;
+    align-self: flex-end;
+    /* не работает */
 }
 
+
 .app {
-    padding-top: 9rem;
+    padding-top: 8rem;
     padding-right: 2rem;
     padding-bottom: 8rem;
     padding-left: 2rem;
@@ -372,7 +373,12 @@ body {
     }
 
     .title {
-        margin: 0;
+        width: 66rem;
+
+        margin-top: 11.5rem;
+        margin-right: 7rem;
+        margin-left: 9rem;
+
         font-size: 6.4rem;
     }
 
@@ -555,7 +561,11 @@ body {
     }
 
     .title {
-        padding-top: 29.5rem;
+        width: 153rem;
+
+        margin-top: 29rem;
+        margin-right: 20rem;
+        margin-left: 19rem;
 
         font-size: 9rem;
     }
