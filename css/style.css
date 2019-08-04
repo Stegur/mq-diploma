@@ -18,8 +18,9 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Open Sans';
+    max-width: 1920px;
 }
 
 /* PHONES */
@@ -681,6 +682,17 @@ body {
 
     .footer {
         background-image: url(../images//game_1920.jpg);
+        padding-top: 23rem;
+        padding-bottom: 5rem;
+    }
+
+    .app {
+        padding-top: 15.5rem;
+        padding-bottom: 26rem;
+    }
+
+    .footer-title-descr {
+        font-size: 3rem;
     }
 
     /* END FOOTER*/
