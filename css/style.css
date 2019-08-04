@@ -631,4 +631,57 @@ body {
     }
 
     /* END SPORTSMEN */
+
+    /* ARTICLES */
+
+    .article {
+        display: flex;
+        /* flex-wrap: wrap; */
+
+    }
+
+    picture,
+    .article-container {
+        width: 50%;
+    }
+
+    .article:nth-child(even) picture {
+        order: 1;
+    }
+
+    .article-title {
+        margin-top: 23rem;
+        margin-bottom: 7rem;
+
+        padding-top: 20px;
+        padding-left: 13rem;
+    }
+
+    .article-number {
+        left: -9rem;
+        top: 0;
+
+        width: 17rem;
+        height: 15.5rem;
+    }
+
+    .article:nth-child(even) .article-number {
+        right: 600px;
+    }
+
+    .article-description {
+        padding-left: 13rem;
+        width: 63.5rem;
+    }
+
+
+    /* END ARTICLES */
+
+    /* FOOTER*/
+
+    .footer {
+        background-image: url(../images//game_1920.jpg);
+    }
+
+    /* END FOOTER*/
 }
