@@ -20,6 +20,7 @@ html {
 body {
     margin: auto;
     font-family: 'Open Sans';
+    min-width: 320px;
     max-width: 1920px;
 }
 
@@ -99,14 +100,13 @@ body {
 
 .app-link {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     height: 4rem;
 
     background-color: #5e42b0;
-    border-radius: 1.8rem;
+    border-radius: 3rem;
 
     color: #FFFFFF;
     font-size: 0.8rem;
@@ -120,6 +120,7 @@ body {
 
 .brand-logo-icon {
     height: 2.5rem;
+    margin-right: 10px;
     fill: #FFFFFF;
 }
 
@@ -130,11 +131,6 @@ body {
 /* END HEADER */
 
 /* SPORTSMEN */
-.athlets,
-.players {
-    /* padding-top: 25px; */
-    /* padding-bottom: 75px; */
-}
 
 .sportsman-title,
 .benefit-title {
@@ -191,13 +187,11 @@ body {
     letter-spacing: 0.08rem;
 }
 
-.benefit:nth-child(3) {
-    /* background-color: #fafafa; */
-    background-color: red;
-    /*не могу побороть селектор*/
+.benefit:nth-child(1) {
+    background-color: #fafafa;
 }
 
-.benefit:nth-child(4) {
+.benefit:nth-child(2) {
     background-color: #f5f4f9;
 }
 
@@ -237,9 +231,11 @@ body {
     width: 100%;
 }
 
-.article-title {
+.article-container {
     position: relative;
+}
 
+.article-title {
     margin-top: 3rem;
     margin-bottom: 2.5rem;
 
@@ -250,8 +246,9 @@ body {
 
 .article-number {
     position: absolute;
-    top: -90px;
-    /* Альтернативы? */
+    top: -9rem;
+    left: 2rem;
+    ;
 
     display: flex;
     flex-wrap: wrap;
@@ -262,12 +259,24 @@ body {
     height: 7rem;
 
     background-color: #5e42b0;
-}
-
-.article-number-decoration {
-    border-bottom: 2px solid #8f7bc8;
 
     font-size: 1.4rem;
+    font-weight: bold;
+    color: #e7e7e7;
+}
+
+.article-number::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+
+    width: 1.5rem;
+    height: 0.4rem;
+
+    background-color: #8f7bc8;
+    border-radius: 5px;
 }
 
 .article-description {
@@ -373,7 +382,7 @@ body {
     }
 
     .title {
-        width: 66rem;
+        /* width: 66rem; */
 
         margin-top: 11.5rem;
         margin-right: 7rem;
@@ -400,7 +409,7 @@ body {
         width: 45%;
         height: 8rem;
 
-        border-radius: 3.5rem;
+        border-radius: 5rem;
 
         font-size: 1.4rem;
     }
@@ -430,7 +439,7 @@ body {
     }
 
     .athlets .sportsman-img {
-        left: -10rem;
+        left: -15rem;
     }
 
     .sportsman-title {
@@ -468,6 +477,7 @@ body {
     }
 
     .players .sportsman-img {
+        display: inline-block;
         right: 0;
     }
 
@@ -492,11 +502,16 @@ body {
         height: 12rem;
     }
 
+    .article-number::after {
+        width: 3rem;
+        height: 0.5rem;
+    }
+
     .article-title {
         font-size: 8rem;
     }
 
-    .article-number-decoration,
+    .article-number,
     .article-description {
         font-size: 2.4rem;
     }
@@ -556,16 +571,12 @@ body {
 
     .logo-text {
         width: 19rem;
-
         padding-top: 4rem;
     }
 
     .title {
-        width: 153rem;
-
+        /* width: 153rem; */
         margin-top: 29rem;
-        margin-right: 20rem;
-        margin-left: 19rem;
 
         font-size: 9rem;
     }
@@ -607,12 +618,15 @@ body {
     }
 
     .athlets .sportsman-img {
+        top: -7rem;
+        left: auto;
+        right: 50vw;
+
         margin: 0;
-        left: 20vw;
     }
 
     .athlets .benefit-discription {
-        width: 71.5rem;
+        /* width: 71.5rem; */
     }
 
     .players .sportsman-title,
@@ -621,12 +635,16 @@ body {
     }
 
     .players .benefit-discription {
-        width: 75.5rem;
+        width: 50vw;
     }
 
     .players .sportsman-img {
         top: -7vh;
-        right: 7vw;
+        left: 55rem;
+
+        /* width: 50vw; */
+
+        margin: 0;
     }
 
     .benefit-title {
@@ -647,7 +665,6 @@ body {
 
     .article {
         display: flex;
-        /* flex-wrap: wrap; */
 
     }
 
@@ -670,19 +687,25 @@ body {
 
     .article-number {
         left: -9rem;
-        top: 0;
+        top: 24rem;
 
         width: 17rem;
         height: 15.5rem;
     }
 
+    .article-number::after {
+        width: 3rem;
+        height: 0.5rem;
+    }
+
     .article:nth-child(even) .article-number {
-        right: 600px;
+        left: auto;
+        right: -9rem;
     }
 
     .article-description {
         padding-left: 13rem;
-        width: 63.5rem;
+        /* max-width: 63.5rem; */
     }
 
 
@@ -696,9 +719,23 @@ body {
         padding-bottom: 5rem;
     }
 
+    .footer-title-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app-logo,
+    .footer-title {
+        margin: 0;
+    }
+
+    .footer-title {
+        margin-left: 3.5rem;
+    }
+
     .app {
-        padding-top: 15.5rem;
-        padding-bottom: 26rem;
+        padding-top: 22.7rem;
+        padding-bottom: 11.5rem;
     }
 
     .footer-title-descr {
