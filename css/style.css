@@ -1,15 +1,15 @@
 @font-face {
     font-family: "Open Sans";
-    src: url('/fonts/OpenSans-Regular.ttf') format('ttf'),
-        url('/fonts/OpenSans-Regular.woff') format('woff'),
-        url('/fonts/OpenSans-Regular.woff2') format('woff2')
+    src: url('./fonts/OpenSans-Regular.ttf') format('ttf'),
+        url('./fonts/OpenSans-Regular.woff') format('woff'),
+        url('./fonts/OpenSans-Regular.woff2') format('woff2')
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url('/fonts/OpenSans-Bold.ttf') format('ttf'),
-        url('/fonts/OpenSans-Bold.woff') format('woff'),
-        url('/fonts/OpenSans-Bold.woff2') format('woff2');
+    src: url('./fonts/OpenSans-Bold.ttf') format('ttf'),
+        url('./fonts/OpenSans-Bold.woff') format('woff'),
+        url('./fonts/OpenSans-Bold.woff2') format('woff2');
     font-weight: bold;
 }
 
@@ -72,10 +72,10 @@ body {
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 
-    width: 20rem;
+    /* width: 20rem; */
 
     margin-top: 7rem;
     margin-left: 2rem;
@@ -85,9 +85,12 @@ body {
     text-transform: uppercase;
 }
 
+.title span {
+    display: block;
+}
+
 .title-right {
-    align-self: flex-end;
-    /* не работает */
+    text-align: right;
 }
 
 
@@ -125,6 +128,7 @@ body {
 }
 
 .app-link-next-text {
+    width: 8rem;
     font-weight: bold;
 }
 
@@ -248,7 +252,6 @@ body {
     position: absolute;
     top: -9rem;
     left: 2rem;
-    ;
 
     display: flex;
     flex-wrap: wrap;
@@ -353,10 +356,12 @@ body {
 }
 
 .footer-title-descr {
-    display: block;
+    margin: 0;
 
     color: #9b8ec1;
     font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .footer .app {
@@ -544,6 +549,7 @@ body {
         margin-top: 8.5rem;
 
         font-size: 8rem;
+        letter-spacing: 0.35rem;
     }
 
     .footer-title-descr {
@@ -625,8 +631,8 @@ body {
         margin: 0;
     }
 
-    .athlets .benefit-discription {
-        /* width: 71.5rem; */
+    .players {
+        overflow: hidden;
     }
 
     .players .sportsman-title,
@@ -639,10 +645,8 @@ body {
     }
 
     .players .sportsman-img {
-        top: -7vh;
-        left: 55rem;
-
-        /* width: 50vw; */
+        top: -30px;
+        /* left: calc(50% - 407px); */
 
         margin: 0;
     }
@@ -665,7 +669,6 @@ body {
 
     .article {
         display: flex;
-
     }
 
     picture,
@@ -705,7 +708,6 @@ body {
 
     .article-description {
         padding-left: 13rem;
-        /* max-width: 63.5rem; */
     }
 
 
@@ -729,17 +731,26 @@ body {
         margin: 0;
     }
 
+    .footer-title-text-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3.5rem;
+
+        line-height: 1.2;
+    }
+
     .footer-title {
-        margin-left: 3.5rem;
+        text-align: left;
+    }
+
+    .footer-title-descr {
+        font-size: 3rem;
+        text-align: left;
     }
 
     .app {
         padding-top: 22.7rem;
         padding-bottom: 11.5rem;
-    }
-
-    .footer-title-descr {
-        font-size: 3rem;
     }
 
     /* END FOOTER*/
