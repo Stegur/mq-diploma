@@ -1,15 +1,15 @@
 @font-face {
     font-family: "Open Sans";
-    src: url('./fonts/OpenSans-Regular.ttf') format('ttf'),
-        url('./fonts/OpenSans-Regular.woff') format('woff'),
-        url('./fonts/OpenSans-Regular.woff2') format('woff2')
+    src: url('../fonts/OpenSans-Regular.ttf') format('ttf'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2')
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url('./fonts/OpenSans-Bold.ttf') format('ttf'),
-        url('./fonts/OpenSans-Bold.woff') format('woff'),
-        url('./fonts/OpenSans-Bold.woff2') format('woff2');
+    src: url('../fonts/OpenSans-Bold.ttf') format('ttf'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2');
     font-weight: bold;
 }
 
@@ -64,7 +64,7 @@ body {
 .logo-text {
     width: 135px;
     margin: auto;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 .logo-text-icon {
@@ -72,17 +72,14 @@ body {
 }
 
 .title {
-    /* display: flex;
-    flex-direction: column; */
-
-    /* width: 20rem; */
-
-    margin-top: 7rem;
+    margin-top: 12.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 0;
 
+    font-size: 2.8rem;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 .title span {
@@ -90,14 +87,16 @@ body {
 }
 
 .title-right {
-    text-align: right;
+    margin-top: 1rem;
+    margin-left: 4.5rem;
+    text-align: left;
 }
 
 
 .app {
     padding-top: 8rem;
     padding-right: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 8.5rem;
     padding-left: 2rem;
 }
 
@@ -106,7 +105,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: 4rem;
+    height: 3.5rem;
 
     background-color: #5e42b0;
     border-radius: 3rem;
@@ -143,7 +142,7 @@ body {
 }
 
 .sportsman-title {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: 20px;
 
     font-size: 5rem;
@@ -151,7 +150,7 @@ body {
 
 .sportsman-img {
     display: block;
-    margin: 0 auto;
+    margin: -40px auto -70px;
 }
 
 .benefits {
@@ -161,34 +160,62 @@ body {
 }
 
 .benefit {
-    padding-top: 60px;
+    padding-top: 68px;
     padding-right: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
     padding-left: 20px;
 
+}
+
+.benefits .benefit:nth-child(2) {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.benefits .benefit:nth-child(3) {
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .benefit-title {
     display: flex;
     align-items: center;
 
+    margin-bottom: 16px;
+
     font-size: 2.3rem;
     letter-spacing: 0.08rem;
 }
 
 .benefit-title-number {
-    margin-right: 8px;
+    position: relative;
 
-    border-bottom: 2px solid #5e42b0;
-    border-radius: 2px;
+    margin-right: 8px;
 
     color: #000000;
     font-size: 1.4rem;
 }
 
+.benefit-title-number::after {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    top: 18px;
+
+    width: 1.6rem;
+    height: 2px;
+
+    transform: translate(-50%);
+
+    background-color: #5e42b0;
+    border-radius: 2px;
+}
+
 .benefit-discription {
     font-size: 1.5rem;
     letter-spacing: 0.08rem;
+    line-height: 18px;
 }
 
 .benefit:nth-child(1) {
@@ -207,12 +234,40 @@ body {
     color: #FFFFFF;
 }
 
-.benefit:last-child .benefit-title-number {
-    border-bottom: 2px solid #FFFFFF;
+.benefit:last-child .benefit-title-number::after {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    top: 18px;
+
+    width: 1.6rem;
+    height: 2px;
+
+    transform: translate(-50%);
+
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.players .sportsman-img {
+    margin-bottom: -30px;
+}
+
+.players .benefit {
+    padding-top: 60px;
 }
 
 .players .benefit:last-child {
     background-color: #090c35;
+}
+
+.players .benefit:nth-child(2) .benefit-title {
+    margin-bottom: 18px;
+}
+
+.players .benefit:nth-child(2) .benefit-discription {
+    margin-bottom: 20px;
 }
 
 .players .benefit:last-child .benefit-title-number {
@@ -231,6 +286,10 @@ body {
     letter-spacing: 0.09rem;
 }
 
+.article:first-child .article-container .article-description {
+    padding-right: 40px;
+}
+
 .article-img {
     width: 100%;
 }
@@ -240,8 +299,8 @@ body {
 }
 
 .article-title {
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
     color: #e7e7e7;
     font-size: 2.8rem;
@@ -250,7 +309,7 @@ body {
 
 .article-number {
     position: absolute;
-    top: -9rem;
+    top: -82px;
     left: 2rem;
 
     display: flex;
@@ -284,9 +343,18 @@ body {
 
 .article-description {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
 
     font-size: 1.6rem;
+    letter-spacing: 0.8px;
+}
+
+/* .articles .article:nth-child(3) {
+    padding-top: 5px;
+} */
+
+.articles .article:nth-child(3) .article-description {
+    margin-bottom: 65px;
 }
 
 /* END ARTICLES */
@@ -328,8 +396,8 @@ body {
     align-items: center;
     justify-content: center;
 
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7.5rem;
 
     margin-right: auto;
     margin-left: auto;
@@ -345,12 +413,13 @@ body {
 }
 
 .footer-title {
-    margin-top: 5.5rem;
-    margin-right: 2rem;
+    margin-top: 4.5rem;
+    margin-right: auto;
     margin-bottom: 0;
-    margin-left: 2rem;
+    margin-left: auto;
 
     font-size: 3.2rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -360,6 +429,7 @@ body {
 
     color: #9b8ec1;
     font-size: 1.4rem;
+    letter-spacing: 0.7px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -387,32 +457,41 @@ body {
     }
 
     .title {
-        /* width: 66rem; */
-
-        margin-top: 11.5rem;
-        margin-right: 7rem;
-        margin-left: 9rem;
+        margin-top: 16rem;
+        margin-left: 8.5rem;
 
         font-size: 6.4rem;
+        letter-spacing: 3px;
+    }
+
+    .title-right {
+        margin-top: -1rem;
+        margin-left: 11rem;
+        line-height: 8rem;
     }
 
     .app {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
 
         padding-top: 30rem;
-        padding-right: 5rem;
+        padding-right: 4rem;
         padding-bottom: 9rem;
-        padding-left: 5rem;
+        padding-left: 5.5rem;
+
+        line-height: 1.5rem;
     }
 
     .app-link {
+        box-sizing: border-box;
         flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
 
-        width: 45%;
-        height: 8rem;
+        width: 31rem;
+        height: 7.5rem;
+        padding: 18px 38px;
 
         border-radius: 5rem;
 
@@ -421,11 +500,18 @@ body {
 
     .app-link:nth-child(n + 2) {
         margin-top: 0;
-        margin-left: 3rem;
+        margin-right: 20px;
+        padding-left: 55px;
     }
 
     .brand-logo-icon {
         height: 4.5rem;
+        margin-top: -5px;
+        margin-right: 25px;
+    }
+
+    .app-link-next-text {
+        width: auto;
     }
 
     /* END HEADER */
@@ -434,17 +520,19 @@ body {
 
     .athlets,
     .players {
-        margin-top: 9rem;
+        padding-top: 6rem;
         position: relative;
     }
 
     .sportsman-img {
         position: absolute;
-        top: 0;
     }
 
     .athlets .sportsman-img {
-        left: -15rem;
+        top: 13rem;
+        left: -165px;
+
+        height: 704px;
     }
 
     .sportsman-title {
@@ -453,10 +541,6 @@ body {
         font-size: 8rem;
     }
 
-    .athlets .sportsman-img {
-        margin-left: -130px;
-        /* height: 588px; */
-    }
 
     .athlets .benefit,
     .athlets .sportsman-title {
@@ -465,11 +549,21 @@ body {
 
     .benefit {
         padding-top: 4.5rem;
+        padding-right: 30px;
         padding-bottom: 4.5rem;
     }
 
     .benefit:first-child {
-        padding-top: 6rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .benefits .benefit:nth-child(2) {
+        padding-bottom: 20px;
+    }
+
+    .athlets .benefit:last-child {
+        padding-bottom: 20px;
     }
 
     .benefit-title {
@@ -478,21 +572,58 @@ body {
     }
 
     .benefit-discription {
+        margin-top: 20px;
         font-size: 1.6rem;
+        line-height: 26px;
     }
 
     .players .sportsman-img {
-        display: inline-block;
+        top: 75px;
         right: 0;
+
+        display: inline-block;
     }
 
     .players .benefit {
-        padding-right: 293px;
+        padding-right: 330px;
         padding-left: 3rem;
+    }
+
+    .players .benefits .benefit:nth-child(2) {
+        padding-bottom: 15px;
+    }
+
+    .players .benefits .benefit:nth-child(3) {
+        padding-right: 280px;
+        padding-bottom: 15px;
+    }
+
+    .players .benefits .benefit:nth-child(3) .benefit-discription {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
     }
 
     .players .sportsman-title {
         padding-left: 3rem;
+    }
+
+    .benefit-title-number {
+        margin-top: -6px;
+        font-size: 1.8rem;
+    }
+
+    .benefit-title-number::after {
+        top: 22px;
+
+        width: 2rem;
+        height: 5px;
+    }
+
+    .benefit:last-child .benefit-title-number::after {
+        top: 22px;
+
+        width: 2rem;
+        height: 5px;
     }
 
     /* END SPORTSMEN */
@@ -500,7 +631,7 @@ body {
     /* ARTICLES */
 
     .article-number {
-        top: -125px;
+        top: -145px;
         left: 3rem;
 
         width: 12rem;
@@ -513,6 +644,8 @@ body {
     }
 
     .article-title {
+        margin-top: 60px;
+
         font-size: 8rem;
     }
 
@@ -525,6 +658,27 @@ body {
     .article-description {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+
+    .article-description {
+        margin-bottom: 95px;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+
+    .article:nth-child(2) .article-title,
+    .article:nth-child(3) .article-title {
+        margin-top: 50px;
+    }
+
+    .article:nth-child(3) .article-title {
+        margin-bottom: 13px;
+    }
+
+    .articles .article:nth-child(3) .article-description {
+        margin-bottom: 110px;
+        padding-right: 50px;
+        line-height: 28px;
     }
 
     /* END ARTICLES */
@@ -546,10 +700,11 @@ body {
     }
 
     .footer-title {
-        margin-top: 8.5rem;
+        margin-top: 5.5rem;
 
         font-size: 8rem;
         letter-spacing: 0.35rem;
+        line-height: 10rem;
     }
 
     .footer-title-descr {
@@ -557,8 +712,8 @@ body {
     }
 
     .footer .app {
-        padding-top: 29rem;
-        padding-bottom: 6rem;
+        padding-top: 27.5rem;
+        padding-bottom: 5.5rem;
     }
 
     /* END FOOTER */
@@ -581,19 +736,29 @@ body {
     }
 
     .title {
-        /* width: 153rem; */
-        margin-top: 29rem;
+        display: flex;
+        flex-flow: column wrap;
+
+        margin-top: 27rem;
+        margin-left: 18.5rem;
 
         font-size: 9rem;
+        letter-spacing: 5px;
+    }
+
+    .title-right {
+        align-self: flex-end;
+        margin-right: 165px;
+        margin-left: 0;
     }
 
     .app {
-
         display: flex;
         justify-content: center;
 
-        padding-top: 22.5rem;
-        padding-bottom: 11rem;
+
+        padding-top: 21.5rem;
+        padding-bottom: 10.7rem;
     }
 
     .app-link {
@@ -618,20 +783,60 @@ body {
 
     /* SPORTSMEN */
 
+    .athlets {
+        padding-top: 9rem;
+    }
+
     .athlets .sportsman-title,
     .athlets .benefit {
-        padding-left: 50vw;
+        padding-left: calc(50% + 50px);
     }
 
     .athlets .sportsman-img {
-        top: -7rem;
+        top: 3rem;
         left: auto;
         right: 50vw;
 
+        height: 900px;
         margin: 0;
     }
 
+    .athlets .benefits .benefit:last-child {
+        padding-bottom: 40px;
+    }
+
+    .benefit:first-child {
+        padding-bottom: 3rem;
+    }
+
+    .benefit:nth-child(2) .benefit-title {
+        margin-top: 20px;
+    }
+
+    .benefits .benefit:nth-child(2) {
+        padding-bottom: 40px;
+    }
+
+    .benefit-title {
+        margin-top: 50px;
+
+        font-size: 3.6rem;
+        letter-spacing: 2px;
+    }
+
+    .benefit-discription {
+        margin-top: 15px;
+        padding-right: 150px;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .benefit-title-number {
+        font-size: 1.8rem;
+    }
+
     .players {
+        padding-top: 9rem;
         overflow: hidden;
     }
 
@@ -641,26 +846,34 @@ body {
     }
 
     .players .benefit-discription {
-        width: 50vw;
+        max-width: 40em;
     }
 
     .players .sportsman-img {
-        top: -30px;
-        /* left: calc(50% - 407px); */
+        top: 17px;
+        left: 804px;
 
         margin: 0;
     }
 
-    .benefit-title {
-        font-size: 3.6rem;
+    .players .benefits .benefit:first-child {
+        padding-bottom: 3.5rem;
     }
 
-    .benefit-discription {
-        font-size: 2rem;
+    .players .benefits .benefit:nth-child(2) .benefit-title {
+        padding-bottom: 5px;
     }
 
-    .benefit-title-number {
-        font-size: 1.8rem;
+    .players .benefits .benefit:nth-child(2) {
+        padding-bottom: 60px;
+    }
+
+    .players .benefits .benefit:last-child {
+        padding-bottom: 35px;
+    }
+
+    .benefits .benefit:nth-child(3) .benefit-title {
+        margin-top: 20px;
     }
 
     /* END SPORTSMEN */
@@ -671,45 +884,76 @@ body {
         display: flex;
     }
 
-    picture,
+    .article picture,
     .article-container {
         width: 50%;
+    }
+
+    .article-img {
+        display: block;
     }
 
     .article:nth-child(even) picture {
         order: 1;
     }
 
-    .article-title {
-        margin-top: 23rem;
-        margin-bottom: 7rem;
+    .article-description-container {
+        margin-top: 240px;
+        padding-right: 150px;
+    }
 
-        padding-top: 20px;
+    .article-title {
+        margin-top: 20px;
+        margin-bottom: 85px;
+
+        padding-left: 12rem;
+    }
+
+    .article-description {
+        margin-bottom: 0;
+        padding-right: 0;
         padding-left: 13rem;
     }
 
+    .article:nth-child(even) .article-description-container {
+        padding-left: 6rem;
+        padding-right: 120px;
+    }
+
+    .article:nth-child(even) .article-description-container .article-title {
+        margin-bottom: 45px;
+
+    }
+
+    .article:nth-child(3) .article-title {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    .articles .article:nth-child(3) .article-description {
+        padding-left: 125px;
+        padding-right: 25px;
+    }
+
     .article-number {
-        left: -9rem;
-        top: 24rem;
+        left: -83px;
+        top: 215px;
 
         width: 17rem;
         height: 15.5rem;
     }
 
     .article-number::after {
+        bottom: 55px;
+
         width: 3rem;
         height: 0.5rem;
     }
 
     .article:nth-child(even) .article-number {
         left: auto;
-        right: -9rem;
+        right: -85px;
     }
-
-    .article-description {
-        padding-left: 13rem;
-    }
-
 
     /* END ARTICLES */
 
@@ -726,6 +970,11 @@ body {
         justify-content: center;
     }
 
+    .footer .app {
+        padding-top: 14.5rem;
+        padding-bottom: 26rem;
+    }
+
     .app-logo,
     .footer-title {
         margin: 0;
@@ -734,7 +983,7 @@ body {
     .footer-title-text-container {
         display: flex;
         flex-direction: column;
-        padding-left: 3.5rem;
+        padding-left: 20px;
 
         line-height: 1.2;
     }
@@ -744,14 +993,46 @@ body {
     }
 
     .footer-title-descr {
+        margin-top: -5px;
+
         font-size: 3rem;
         text-align: left;
-    }
-
-    .app {
-        padding-top: 22.7rem;
-        padding-bottom: 11.5rem;
+        letter-spacing: normal;
     }
 
     /* END FOOTER*/
+}
+
+@media (min-width: 961px) and (max-width: 1700px) {
+
+    .article-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .article .article-container .article-description-container {
+        margin-top: 0;
+        padding-right: 100px;
+        padding-left: 0;
+    }
+
+    .article .article-description-container .article-title {
+        margin-top: 0;
+        margin-bottom: 3rem;
+        font-size: 5rem;
+    }
+
+    .article-description {
+        font-size: 1.8rem;
+    }
+
+    .article-number {
+        top: calc(50% - 80px);
+    }
+
+    .articles .article:nth-child(3) .article-description {
+        margin-bottom: 0;
+    }
+
 }
